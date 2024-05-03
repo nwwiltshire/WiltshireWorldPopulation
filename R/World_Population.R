@@ -1,0 +1,13 @@
+#' Wiltshire World Population Dataset
+#'
+#' A dataset containing population data for various countries from 1950 to 2020.
+#'
+#' @format A data frame with 235 rows and 72 columns:
+#' \describe{
+#'   \item{country}{Character. The name of the country.}
+#'   \item{1950}{Numeric. The population in the year 1950.}
+#'   \item{1951}{Numeric. The population in the year 1951.}
+#'   ...
+#'   \item{2020}{Numeric. The population in the year 2020.}
+#' }
+"WorldPopulation"
