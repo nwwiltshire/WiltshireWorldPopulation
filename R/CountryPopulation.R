@@ -13,11 +13,10 @@
 #' }
 #'
 #' @export
-#'
-#' @importFrom dplyr filter mutate
-#' @importFrom tidyr gather
-#' @importFrom ggplot2 ggplot aes geom_line labs theme_minimal ggtitle
 CountryPopulation <- function(country_name) {
+  library(dplyr)
+  library(tidyr)
+  library(ggplot2)
   if (!(country_name %in% WorldPopulation$Country_Name)) {
     stop("Error: The provided country name does not exist in the WorldPopulation data.")
   }
